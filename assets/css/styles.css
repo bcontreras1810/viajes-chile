@@ -1,6 +1,13 @@
 #body {
   background-color: black;
-  
+}
+
+#quienesSomos {
+  font-family: "Protest Riot", sans-serif;
+}
+
+#destacados {
+  font-family: "Inconsolata", monospace;
 }
 
 .col {
@@ -9,6 +16,5 @@
 }
 
 #contacto h3 {
- padding: 20px;
- 
+  padding: 20px;
 }

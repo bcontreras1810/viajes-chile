@@ -14,7 +14,13 @@
       src="https://kit.fontawesome.com/744f01c261.js"
       crossorigin="anonymous"
     ></script>
-
+    <!--fuentes-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inconsolata&family=Open+Sans&family=Protest+Riot&family=Roboto:wght@300&display=swap"
+      rel="stylesheet"
+    />
     <!--estilo-->
     <link rel="stylesheet" href="assets/css/styles.css" />
   </head>
@@ -220,7 +226,16 @@
           <label class="mb-2">Mensaje</label>
           <textarea class="form-control" placeholder="" rows="6"></textarea>
         </div>
-        <button type="submit" class="btn btn-primary btn-info">enviar</button>
+        <button
+          type="button"
+          class="btn btn-primary btn-info"
+          data-bs-toggle="tooltip"
+          data-bs-placement="top"
+          data-bs-custom-class="custom-tooltip"
+          data-bs-title="Enviar."
+        >
+          Enviar
+        </button>
       </form>
     </section>
 
@@ -269,5 +284,14 @@
       crossorigin="anonymous"
     ></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <!--tooltip-->
+    <script>
+      const tooltipTriggerList = document.querySelectorAll(
+        '[data-bs-toggle="tooltip"]'
+      );
+      const tooltipList = [...tooltipTriggerList].map(
+        (tooltipTriggerEl) => new bootstrap.Tooltip(tooltipTriggerEl)
+      );
+    </script>
   </body>
 </html>
